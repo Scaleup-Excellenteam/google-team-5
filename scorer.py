@@ -40,7 +40,6 @@ class Scorer:
                 return score + ((i - Scorer.maximum_index_to_check) * multiplier)
         return score + 2
 
-
     @staticmethod
     def get_best_words(correct, array: list[str], quantity: int) -> list[str]:
         result: MaxHeap = MaxHeap(quantity)
