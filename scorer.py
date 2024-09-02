@@ -41,7 +41,7 @@ class Scorer:
         return score + 2
 
     @staticmethod
-    def get_best_words(correct, array: list[str], quantity: int) -> list[str]:
+    def get_best_words(correct: str, array: list[str], quantity: int) -> list[str]:
         result: MaxHeap = MaxHeap(quantity)
         ret: list[Node] = []
         for word in array:
